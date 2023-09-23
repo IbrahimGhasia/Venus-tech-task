@@ -1,3 +1,4 @@
+import BenefitsSection from "./components/BenefitsSection";
 import FeaturesSection from "./components/FeaturesSection";
 import FirstSection from "./components/FirstSection";
 import FreeTrialSection from "./components/FreeTrialSection";
@@ -11,9 +12,10 @@ export default function Home() {
 			<Navbar />
 			<FirstSection />
 			<SecondSection />
-			<StatisticsSection />
 			<FreeTrialSection />
+			<StatisticsSection />
 			<FeaturesSection />
+			<BenefitsSection />
 		</div>
 	);
 }

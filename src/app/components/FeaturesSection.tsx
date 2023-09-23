@@ -17,7 +17,7 @@ export default function FeaturesSection() {
 	return (
 		<div className="my-20">
 			<div className="text-center">
-				<h1 className="text-_black font-bold my-5 text-4xl">
+				<h1 className="text-_black font-bold my-5 text-5xl">
 					Features
 				</h1>
 				<p className="text-_darkBlue font-normal my-5 text-xl">
