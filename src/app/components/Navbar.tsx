@@ -1,3 +1,6 @@
+"use client";
+import { useState, useEffect } from "react";
+
 import Image from "next/image";
 import Button from "./UI/Button";
 
@@ -21,8 +24,36 @@ const navLinks = [
 ];
 
 export default function Navbar() {
+	const [isScrolling, setIsScrolling] = useState(false);
+
+	useEffect(() => {
+		let scrollTimer: any;
+
+		const handleScroll = () => {
+			setIsScrolling(true);
+
+			// Clear the previous timer
+			clearTimeout(scrollTimer);
+
+			// Set a timer to check if scrolling has stopped
+			scrollTimer = setTimeout(() => {
+				setIsScrolling(false);
+			}, 300); // Adjust the delay as needed
+		};
+
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
+
 	return (
-		<nav className="flex justify-between items-center px-16 py-10">
+		<nav
+			className={`flex justify-between items-center px-16 py-10 fixed top-0 left-0 right-0 z-10 transition-transform duration-300 transform ${
+				isScrolling ? "-translate-y-full" : "translate-y-0"
+			}`}
+		>
 			<div>
 				<Image
 					src="/IONI_LOGO.svg"
