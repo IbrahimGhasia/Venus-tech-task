@@ -4,7 +4,7 @@ import WinBadge from "./UI/WinBadge";
 
 export default function FirstSection() {
 	return (
-		<div className="h-screen bg-gradient-to-r from-violet-200 to-pink-200">
+		<div className="h-screen bg-gradient-to-r via-violet-100 to-sky-200 from-pink-200">
 			<div className="pt-32 grid grid-cols-2 items-center px-20">
 				<div>
 					<div className="flex gap-3 my-5">
@@ -30,7 +30,7 @@ export default function FirstSection() {
 					<Button text="Free Trial" />
 				</div>
 				<div className="flex justify-center">
-					<img src="/CHAT.png" className="" alt="chat-img" />
+					<img src="/CHAT.png" alt="chat-img" />
 				</div>
 			</div>
 		</div>

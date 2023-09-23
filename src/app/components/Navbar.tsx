@@ -68,7 +68,7 @@ export default function Navbar() {
 					{navLinks.map((link, index) => (
 						<li
 							key={index}
-							className="cursor-pointer hover:text-_pink duration-200"
+							className="cursor-pointer hover:text-_pink duration-300 link-underline link-underline-black"
 						>
 							{link.title}
 						</li>

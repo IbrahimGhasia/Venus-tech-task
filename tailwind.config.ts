@@ -21,6 +21,7 @@ const config: Config = {
 				_pink: "#96f",
 				_black: "#181818",
 				_red: "#f53333",
+				_gray: "#f4f8fb",
 			},
 		},
 	},
