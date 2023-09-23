@@ -20,6 +20,7 @@ const config: Config = {
 				_darkBlue: "#0a2540",
 				_pink: "#96f",
 				_black: "#181818",
+				_red: "#f53333",
 			},
 		},
 	},

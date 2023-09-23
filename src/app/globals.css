@@ -2,13 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-/* custom CSS class for hiding/showing navbar */
-.navbar-hidden {
-	transform: translateY(-100%);
-	transition: transform 0.3s ease-in-out;
+.gradient-text {
+	background-image: linear-gradient(243deg, #c10f0f 18%, #0a2540);
+	-webkit-background-clip: text; /* For Safari/Chrome */
+	background-clip: text;
+	color: transparent;
 }
 
-.navbar-visible {
-	transform: translateY(0);
-	transition: transform 0.3s ease-in-out;
+.link-underline {
+	border-bottom-width: 0;
+	background-image: linear-gradient(transparent, transparent),
+		linear-gradient(#fff, #fff);
+	background-size: 0 3px;
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	transition: background-size 0.3s ease-in-out;
+}
+
+.link-underline-black {
+	background-image: linear-gradient(transparent, transparent),
+		linear-gradient(#96f, #96f);
+}
+
+.link-underline:hover {
+	background-size: 100% 3px;
+	background-position: 0 100%;
 }
