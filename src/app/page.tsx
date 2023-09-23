@@ -5,6 +5,7 @@ import FreeTrialSection from "./components/FreeTrialSection";
 import Navbar from "./components/Navbar";
 import SecondSection from "./components/SecondSection";
 import StatisticsSection from "./components/StatisticsSection";
+import UseCaseSection from "./components/UseCaseSection";
 
 export default function Home() {
 	return (
@@ -16,6 +17,7 @@ export default function Home() {
 			<StatisticsSection />
 			<FeaturesSection />
 			<BenefitsSection />
+			<UseCaseSection />
 		</div>
 	);
 }

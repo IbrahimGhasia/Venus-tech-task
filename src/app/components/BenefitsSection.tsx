@@ -3,7 +3,7 @@ import BeenfitCard from "./UI/BenefitCard";
 
 export default function BenefitsSection() {
 	return (
-		<div className="mx-20 my-20">
+		<div className="mx-40 my-20">
 			<h1 className="text-5xl font-bold text-_black text-center my-5">
 				Benefits
 			</h1>
@@ -11,7 +11,7 @@ export default function BenefitsSection() {
 				Streamline your workflow with AI
 			</p>
 
-			<div className="grid grid-cols-2 gap-x-20">
+			<div className="grid grid-cols-2 gap-x-10">
 				{benefits.map((item, key) => (
 					<BeenfitCard
 						key={key}

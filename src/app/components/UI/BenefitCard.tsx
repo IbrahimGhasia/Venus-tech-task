@@ -16,7 +16,7 @@ export default function BeenfitCard({
 			</div>
 
 			<h3 className="text-3xl font-bold text-_black my-5">{heading}</h3>
-			<p className="text-lg text-_darkBlue font-normal my-5 text-justify">
+			<p className="text-lg text-_darkBlue font-normal my-5 text-justify px-10">
 				{text}
 			</p>
 		</div>
