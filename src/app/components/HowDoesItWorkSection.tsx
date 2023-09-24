@@ -1,6 +1,11 @@
 "use client";
 import React, { useState } from "react";
-import { TECollapse } from "tw-elements-react";
+import dynamic from "next/dynamic";
+// import { TECollapse } from "tw-elements-react";
+
+const TECollapse = dynamic(() =>
+	import("tw-elements-react").then((res) => res.TECollapse)
+);
 
 export default function HowDoesItWorkSection(): JSX.Element {
 	const [activeElement, setActiveElement] = useState("element1");

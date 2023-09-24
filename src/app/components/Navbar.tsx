@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 
 import Image from "next/image";
 import Button from "./UI/Button";
+import Link from "next/link";
 
 const navLinks = [
 	{
@@ -55,23 +56,24 @@ export default function Navbar() {
 			}`}
 		>
 			<div>
-				<Image
-					src="/IONI_LOGO.svg"
-					alt="logo"
-					width={85}
-					height={24}
-					className="hover:-translate-y-1 duration-200 cursor-pointer"
-				/>
+				<Link href={"/"}>
+					<Image
+						src="/IONI_LOGO.svg"
+						alt="logo"
+						width={85}
+						height={24}
+						className="hover:-translate-y-1 duration-200 cursor-pointer"
+					/>
+				</Link>
 			</div>
 			<div>
 				<ul className="flex gap-10 text-_black font-bold text-lg">
 					{navLinks.map((link, index) => (
-						<li
-							key={index}
-							className="cursor-pointer hover:text-_pink duration-300 link-underline link-underline-black"
-						>
-							{link.title}
-						</li>
+						<Link key={index} href={link.link}>
+							<li className="cursor-pointer hover:text-_pink duration-300 link-underline link-underline-black">
+								{link.title}
+							</li>
+						</Link>
 					))}
 				</ul>
 			</div>

@@ -1,15 +1,22 @@
+import dynamic from "next/dynamic";
+
 import BenefitsSection from "./components/BenefitsSection";
 import FeaturesSection from "./components/FeaturesSection";
 import FirstSection from "./components/FirstSection";
 import Footer from "./components/Footer";
 import FreeTrialSection from "./components/FreeTrialSection";
 import GetStartedBanner from "./components/GetStartedBanner";
-import HowDoesItWorkSection from "./components/HowDoesItWorkSection";
+// import HowDoesItWorkSection from "./components/HowDoesItWorkSection";
 import Navbar from "./components/Navbar";
 import ReviewSection from "./components/ReviewSection";
 import SecondSection from "./components/SecondSection";
 import StatisticsSection from "./components/StatisticsSection";
 import UseCaseSection from "./components/UseCaseSection";
+
+const HowDoesItWorkSection = dynamic(
+	() => import("./components/HowDoesItWorkSection"),
+	{ ssr: false }
+);
 
 export default function Home() {
 	return (

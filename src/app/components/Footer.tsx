@@ -5,19 +5,22 @@ import {
 	IconBrandLinkedin,
 	IconBrandTwitter,
 } from "@tabler/icons-react";
+import Link from "next/link";
 
 export default function Footer() {
 	return (
 		<div className="px-20 pt-20 pb-10 bg-_darkBlue text-white">
 			<div className="grid grid-cols-3 gap-5 border-b border-gray-500">
 				<div className="">
-					<Image
-						src="/ioni_light.svg"
-						alt="logo"
-						width={85}
-						height={24}
-						className="hover:-translate-y-1 duration-200 cursor-pointer my-5"
-					/>
+					<Link href={"/"}>
+						<Image
+							src="/ioni_light.svg"
+							alt="logo"
+							width={85}
+							height={24}
+							className="hover:-translate-y-1 duration-200 cursor-pointer my-5"
+						/>
+					</Link>
 
 					<p className="text-xl font-semibold my-5">
 						Boost your customer support productivity with ChatGPT-4
