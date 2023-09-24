@@ -28,6 +28,7 @@ export default function FeaturesSection() {
 
 			<div className="px-20 my-5">
 				<Swiper
+					cssMode={true}
 					slidesPerView={3}
 					spaceBetween={30}
 					pagination={{
