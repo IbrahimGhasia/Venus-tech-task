@@ -10,7 +10,7 @@ export default function UsecasesCard({
 	text,
 }: UsecasesCardInterface) {
 	return (
-		<div className="w-1/4">
+		<div className="md:w-1/4">
 			<h1 className="text-9xl text-_black font-extrabold -mb-16 ml-10">
 				{index}
 				<span className="text-6xl">#</span>

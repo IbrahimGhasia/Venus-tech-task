@@ -13,10 +13,10 @@ export default function UseCaseSection() {
 	});
 
 	return (
-		<div className="bg-_gray h-screen px-20 py-20" ref={ref}>
-			<div className="flex justify-between items-center">
+		<div className="bg-_gray md:h-screen px-5 md:px-20 py-20" ref={ref}>
+			<div className="flex flex-col md:flex-row justify-between items-center">
 				<div>
-					<h1 className="text-5xl font-bold text-_black my-5 mt-16">
+					<h1 className="text-4xl md:text-5xl font-bold text-_black my-5 mt-16">
 						Use cases
 					</h1>
 					<p className="text-lg font-normal text-_darkBlue my-5">
@@ -29,7 +29,7 @@ export default function UseCaseSection() {
 			</div>
 
 			<motion.div
-				className="flex gap-5"
+				className="flex flex-col md:flex-row gap-5"
 				initial={{ x: -300, opacity: 0 }}
 				animate={inView ? { x: 0, opacity: 1 } : {}}
 				transition={{ duration: 1, delay: 0.5, staggerChildren: 0.2 }}

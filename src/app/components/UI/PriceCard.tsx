@@ -21,19 +21,23 @@ export default function PriceCard({
 	included_list,
 }: PriceCardInterface) {
 	return (
-		<div className="py-5 px-8 w-[400px] rounded-3xl shadow-lg bg-white relative">
-			<h3 className="text-2xl font-semibold text-_black my-5">{plan}</h3>
-			<h6 className="text-lg font-semibold text-_black my-5">
+		<div className="py-5 px-8 md:w-[400px] rounded-3xl shadow-lg bg-white relative">
+			<h3 className="text-xl md:text-2xl font-semibold text-_black my-2 md:my-5">
+				{plan}
+			</h3>
+			<h6 className="text-md md:text-lg font-semibold text-_black my-2 md:my-5">
 				{beta_or_custom}
 			</h6>
-			<h2 className="font-bold text-4xl text-_darkBlue my-5">
+			<h2 className="font-bold text-3xl md:text-4xl text-_darkBlue my-2 md:my-5">
 				$ {price}{" "}
-				<span className="text-2xl font-normal text-_black">/mo</span>
+				<span className="text-xl md:text-2xl font-normal text-_black">
+					/mo
+				</span>
 			</h2>
 
-			<hr className="my-10 border-t border-_black" />
+			<hr className="my-5 md:my-10 border-t border-_black" />
 
-			<h3 className="text-2xl font-semibold text-_black my-5">
+			<h3 className="text-xl md:text-2xl font-semibold text-_black my-5">
 				What{"'"}s included
 			</h3>
 
@@ -54,7 +58,7 @@ export default function PriceCard({
 							)}
 						</div>
 						<li
-							className={`text-md font-normal ${
+							className={`text-sm md:text-md font-normal ${
 								item.strikeThrough ? "line-through" : ""
 							}`}
 						>

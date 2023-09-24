@@ -19,15 +19,15 @@ export default function HowDoesItWorkSection(): JSX.Element {
 	};
 	return (
 		<>
-			<h1 className="text-center text-5xl text-_black font-bold my-5">
+			<h1 className="text-center text-4xl md:text-5xl text-_black font-bold my-5">
 				How does ioni work?
 			</h1>
 
-			<p className="text-center text-lg text-_darkBlue font-normal my-5">
+			<p className="text-center text-sm md:text-lg text-_darkBlue font-normal my-5">
 				Three easy steps to get started exploring Ioni
 			</p>
 
-			<div className="grid grid-cols-2 gap-10 mx-20 my-20">
+			<div className="md:grid grid-cols-2 gap-10 mx-5 md:mx-20 my-20">
 				<div>
 					<div id="accordionExample">
 						<div className="">
@@ -43,10 +43,10 @@ export default function HowDoesItWorkSection(): JSX.Element {
 										<div>
 											<img
 												src="/Dynamic_AI_Knowledge_Base.svg"
-												className="h-16 w-16"
+												className="h-14 w-14"
 											/>
 										</div>
-										<div className="text-4xl font-bold text-_black mt-0">
+										<div className="text-2xl md:text-4xl font-bold text-_black mt-0">
 											1. Accordion Item
 										</div>
 									</div>
@@ -76,12 +76,14 @@ export default function HowDoesItWorkSection(): JSX.Element {
 							</h2>
 							<TECollapse
 								show={activeElement === "element1"}
-								className="!mt-0 !rounded-b-none !shadow-none border-b"
+								className="!mt-0 !rounded-b-none !shadow-none border-b pb-5"
 							>
-								<div className="pl-28 text-lg font-bold text-_darkBlue pb-10">
-									Add HTML and text pages to your AI database
-									and start testing the chat.
-								</div>
+								{activeElement === "element1" && (
+									<div className="pl-28 text-sm md:text-lg font-bold text-_darkBlue pb-10">
+										Add HTML and text pages to your AI
+										database and start testing the chat.
+									</div>
+								)}
 							</TECollapse>
 						</div>
 					</div>
@@ -99,10 +101,10 @@ export default function HowDoesItWorkSection(): JSX.Element {
 										<div>
 											<img
 												src="/widget_builder.svg"
-												className="h-16 w-16"
+												className="h-14 w-14"
 											/>
 										</div>
-										<div className="text-4xl font-bold text-_black mt-0">
+										<div className="text-2xl md:text-4xl font-bold text-_black mt-0">
 											2. Create AI assistant
 										</div>
 									</div>
@@ -132,13 +134,15 @@ export default function HowDoesItWorkSection(): JSX.Element {
 							</h2>
 							<TECollapse
 								show={activeElement === "element2"}
-								className="!mt-0 !rounded-b-none !shadow-none border-b"
+								className="!mt-0 !rounded-b-none !shadow-none border-b pb-5"
 							>
-								<div className="pl-28 text-lg font-bold text-_darkBlue pb-10">
-									Create and customize a personal chatbot that
-									perfectly matches the brand voice and your
-									buisness visual style.
-								</div>
+								{activeElement === "element2" && (
+									<div className="pl-28 text-sm md:text-lg font-bold text-_darkBlue pb-10">
+										Create and customize a personal chatbot
+										that perfectly matches the brand voice
+										and your buisness visual style.
+									</div>
+								)}
 							</TECollapse>
 						</div>
 					</div>
@@ -156,10 +160,10 @@ export default function HowDoesItWorkSection(): JSX.Element {
 										<div>
 											<img
 												src="/create_ai_chat.svg"
-												className="h-16 w-16"
+												className="h-14 w-14"
 											/>
 										</div>
-										<div className="text-4xl font-bold text-_black mt-0">
+										<div className="text-2xl md:text-4xl font-bold text-_black mt-0">
 											3. Analyze conversations
 										</div>
 									</div>
@@ -189,15 +193,17 @@ export default function HowDoesItWorkSection(): JSX.Element {
 							</h2>
 							<TECollapse
 								show={activeElement === "element3"}
-								className="!mt-0 !rounded-b-none !shadow-none border-b"
+								className="!mt-0 !rounded-b-none !shadow-none border-b pb-5"
 							>
-								<div className="pl-28 text-lg font-bold text-_darkBlue pb-10">
-									Check answers and adjust your AI bot. Add
-									questions from your support requests, check
-									the answer and edit if needed. ioni will
-									self-learn and automatically imporve
-									auto-responses.
-								</div>
+								{activeElement === "element3" && (
+									<div className="pl-28 text-lg md:text-lg font-bold text-_darkBlue pb-10">
+										Check answers and adjust your AI bot.
+										Add questions from your support
+										requests, check the answer and edit if
+										needed. ioni will self-learn and
+										automatically imporve auto-responses.
+									</div>
+								)}
 							</TECollapse>
 						</div>
 					</div>

@@ -22,14 +22,14 @@ import reviews from "../../../constants/Reviews";
 
 export default function ReviewSection() {
 	return (
-		<div className="mx-20 my-40 grid grid-cols-3">
+		<div className="mx-5 md:mx-20 my-40 md:grid grid-cols-3">
 			<div className="col-span-1">
-				<h1 className="text-5xl font-bold text-_darkBlue">
+				<h1 className="text-4xl md:text-5xl font-bold text-_darkBlue">
 					See why people choose ioni
 				</h1>
 			</div>
 
-			<div className="col-span-2">
+			<div className="mt-10 md:mt-0 col-span-2">
 				<Swiper
 					slidesPerView={1.5}
 					cssMode={true}

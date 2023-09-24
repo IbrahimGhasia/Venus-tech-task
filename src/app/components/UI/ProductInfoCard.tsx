@@ -12,11 +12,11 @@ export default function ProductInfoCard({
 	text,
 }: ProductInfoCardInterface) {
 	return (
-		<div className="grid grid-cols-2 gap-20 items-center mx-32 my-20">
+		<div className="md:grid grid-cols-2 gap-20 items-center mx-5 md:mx-32 my-20">
 			{inverted ? null : (
 				<div>
 					<img
-						className="h-fit w-fit shadow-lg rounded-3xl"
+						className="hidden md:block h-fit w-fit shadow-lg rounded-3xl"
 						src={image}
 					/>
 				</div>
@@ -35,7 +35,7 @@ export default function ProductInfoCard({
 			{inverted ? (
 				<div>
 					<img
-						className="h-fit w-fit shadow-lg rounded-3xl"
+						className="hidden md:block h-fit w-fit shadow-lg rounded-3xl"
 						src={image}
 					/>
 				</div>

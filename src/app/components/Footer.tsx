@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export default function Footer() {
 	return (
-		<div className="px-20 pt-20 pb-10 bg-_darkBlue text-white">
+		<div className="hidden md:block px-20 pt-20 pb-10 bg-_darkBlue text-white">
 			<div className="grid grid-cols-3 gap-5 border-b border-gray-500">
 				<div className="">
 					<Link href={"/"}>

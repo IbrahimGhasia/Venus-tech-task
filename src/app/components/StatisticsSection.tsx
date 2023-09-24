@@ -9,7 +9,10 @@ export default function StatisticsSection() {
 	});
 
 	return (
-		<div className="flex justify-center text-center gap-40 my-40" ref={ref}>
+		<div
+			className="flex flex-col gap-y-10 md:flex-row justify-center text-center gap-5 md:gap-40 my-40"
+			ref={ref}
+		>
 			<motion.div
 				initial={{ x: -300, opacity: 0 }}
 				animate={inView ? { x: 0, opacity: 1 } : {}}

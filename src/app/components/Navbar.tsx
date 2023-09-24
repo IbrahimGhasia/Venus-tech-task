@@ -51,7 +51,7 @@ export default function Navbar() {
 
 	return (
 		<nav
-			className={`flex justify-between items-center px-20 py-6 border-b-2 border-_darkBlue backdrop-blur-md fixed top-0 left-0 right-0 z-10 transition-transform duration-300 transform ${
+			className={`hidden md:flex justify-between items-center px-20 py-6 border-b-2 border-_darkBlue backdrop-blur-md fixed top-0 left-0 right-0 z-10 transition-transform duration-300 transform ${
 				isScrolling ? "-translate-y-full" : "translate-y-0"
 			}`}
 		>
