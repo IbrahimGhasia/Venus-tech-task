@@ -4,6 +4,7 @@ import FirstSection from "./components/FirstSection";
 import Footer from "./components/Footer";
 import FreeTrialSection from "./components/FreeTrialSection";
 import GetStartedBanner from "./components/GetStartedBanner";
+import HowDoesItWorkSection from "./components/HowDoesItWorkSection";
 import Navbar from "./components/Navbar";
 import ReviewSection from "./components/ReviewSection";
 import SecondSection from "./components/SecondSection";
@@ -20,6 +21,7 @@ export default function Home() {
 			<StatisticsSection />
 			<FeaturesSection />
 			<GetStartedBanner />
+			<HowDoesItWorkSection />
 			<BenefitsSection />
 			<UseCaseSection />
 			<ReviewSection />

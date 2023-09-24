@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import localFont from "@next/font/local";
+import "tw-elements-react/dist/css/tw-elements-react.min.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
