@@ -15,7 +15,7 @@ export default function PricingSection() {
 				features.
 			</p>
 
-			<div className="flex gap-10">
+			<div className="flex justify-center gap-10">
 				{price.map((item, key) => (
 					<PriceCard
 						key={key}

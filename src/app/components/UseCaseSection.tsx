@@ -1,10 +1,19 @@
+"use client";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 import Button from "./UI/Button";
 import usecases from "../../../constants/UserCases";
 import UsecasesCard from "./UI/UsecasesCard";
 
 export default function UseCaseSection() {
+	const { ref, inView } = useInView({
+		triggerOnce: true, // This will trigger the animation only once
+		threshold: 0.2, // Adjust this value as needed
+	});
+
 	return (
-		<div className="bg-_gray h-screen px-20 py-20">
+		<div className="bg-_gray h-screen px-20 py-20" ref={ref}>
 			<div className="flex justify-between items-center">
 				<div>
 					<h1 className="text-5xl font-bold text-_black my-5 mt-16">
@@ -19,7 +28,12 @@ export default function UseCaseSection() {
 				</div>
 			</div>
 
-			<div className="flex gap-5">
+			<motion.div
+				className="flex gap-5"
+				initial={{ x: -300, opacity: 0 }}
+				animate={inView ? { x: 0, opacity: 1 } : {}}
+				transition={{ duration: 1, delay: 0.5, staggerChildren: 0.2 }}
+			>
 				{usecases.map((item, key) => (
 					<UsecasesCard
 						key={key}
@@ -28,7 +42,7 @@ export default function UseCaseSection() {
 						text={item.text}
 					/>
 				))}
-			</div>
+			</motion.div>
 		</div>
 	);
 }
