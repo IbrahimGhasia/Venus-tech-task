@@ -13,7 +13,12 @@
 
 ## My approch
 
-In this project, I aimed to recreate the website [https://ioni.ai/](https://ioni.ai/) while enhancing its user experience and visual appeal. Below are the major changes and improvements made:
+In this project, I aimed to recreate the website of Ioni AI while enhancing its user experience and visual appeal.
+<br />
+
+-   Deployed Site: [https://venus-tech-task-self.vercel.app/](https://venus-tech-task-self.vercel.app/).
+
+Below are the major changes and improvements made:
 
 **1. Sticky Navbar**:
 
@@ -71,7 +76,7 @@ In this project, I aimed to recreate the website [https://ioni.ai/](https://ioni
 
 -   Headings were set to black, and paragraph text to dark blue.
 
-The goal of this project was to recreate the website while addressing UI issues and improving the overall user experience. The result is a visually appealing and user-friendly version of [https://ioni.ai/](https://ioni.ai/).
+The goal of this project was to recreate the website while addressing UI issues and improving the overall user experience. The result is a visually appealing and user-friendly version of Ioni AI
 
 ## Installation and Usage
 
