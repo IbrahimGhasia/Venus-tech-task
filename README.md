@@ -15,33 +15,61 @@
 
 In this project, I aimed to recreate the website [https://ioni.ai/](https://ioni.ai/) while enhancing its user experience and visual appeal. Below are the major changes and improvements made:
 
-**1. Sticky Navbar**: The original website's navigation bar was not sticky, which made it less user-friendly. I enhanced the Navbar to stick at the top of the page. It automatically hides as the user scrolls down and reappears after a 1-second delay when scrolling stops.
+**1. Sticky Navbar**:
 
-**2. Feature Page Design**: The previous design of the feature page didn't fit within the device's viewport, requiring users to scroll extensively. I introduced an automatic carousel effect to display all the features in a user-friendly manner, ensuring that the content fits within the screen.
+-   The original website's navigation bar was not sticky, which made it less user-friendly. I enhanced the Navbar to stick at the top of the page. It automatically hides as the user scrolls down and reappears after a 1-second delay when scrolling stops.
 
-**3. Benefits Page Design**: The benefits section is crucial for user engagement, but the original design relied heavily on textual information. I improved this by adding relevant icon images above the headings, making the content more visually appealing and engaging.
+**2. Feature Page Design**:
 
-**4. Use Case Design**: The initial design for use cases was simple and lacked visual appeal. I changed it to make it more attractive and user-friendly.
+-   The previous design of the feature page didn't fit within the device's viewport, requiring users to scroll extensively. I introduced an automatic carousel effect to display all the features in a user-friendly manner, ensuring that the content fits within the screen.
 
-**5. Pricing Page Card**: The original cards on the pricing page had varying lengths and didn't effectively highlight the differences between the plans. We redesigned the cards to clearly display all plan benefits with green checkmarks and indicated what's not offered with a strikethrough and red crosses.
+**3. Benefits Page Design**:
 
-**6. Smooth Animations**: I have added smooth animations throughout the website using Framer Motion.
+-   The benefits section is crucial for user engagement, but the original design relied heavily on textual information. I improved this by adding relevant icon images above the headings, making the content more visually appealing and engaging.
 
-**7. Reorganized Sections**: I reorganized certain sections to improve the overall flow and coherence of the website.
+**4. Use Case Design**:
 
-**8. Mobile Compatibility**: I ensured that the website is mobile-compatible, providing a seamless experience for users on various devices.
+-   The initial design for use cases was simple and lacked visual appeal. I changed it to make it more attractive and user-friendly.
 
-Additionally, I made several smaller upgrades:
+**5. Pricing Page Card**:
 
--   **Background**: I added a gradient background with a mix of pink, purple, and sky blue to complement the provided images and application color scheme.
+-   The original cards on the pricing page had varying lengths and didn't effectively highlight the differences between the plans. We redesigned the cards to clearly display all plan benefits with green checkmarks and indicated what's not offered with a strikethrough and red crosses.
 
--   **Images**: I applied a shadow effect to images to improve their appearance.
+**6. Smooth Animations**:
 
--   **Learn More Text**: I added an underline effect to "Learn More" text for emphasis.
+-   I have added smooth animations throughout the website using Framer Motion.
 
--   **Social Icons**: I changed the color of social icons to white, with a purple hover effect.
+**7. Reorganized Sections**:
 
--   **Text Colors**: Headings were set to black, and paragraph text to dark blue.
+-   I reorganized certain sections to improve the overall flow and coherence of the website.
+
+**8. Mobile Compatibility**:
+
+-   I ensured that the website is mobile-compatible, providing a seamless experience for users on various devices.
+
+### Additionally, I made several smaller upgrades:
+
+---
+
+**1. Background**:
+
+-   I added a gradient background with a mix of pink, purple, and sky blue to complement the provided images and application color scheme.
+
+**2. Images**:
+
+-   I applied a shadow effect to images to improve their appearance.
+
+**3. Learn More Text**:
+
+-   I added an underline effect to "Learn More" text for emphasis.
+
+**4. Social Icons**:
+
+-   I changed the color of social icons to white, with a purple hover effect.
+
+**5. Text Colors**:
+
+-   Headings were set to black, and paragraph text to dark blue.
 
 The goal of this project was to recreate the website while addressing UI issues and improving the overall user experience. The result is a visually appealing and user-friendly version of [https://ioni.ai/](https://ioni.ai/).
 

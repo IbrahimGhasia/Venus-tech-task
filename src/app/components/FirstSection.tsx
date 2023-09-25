@@ -1,11 +1,26 @@
-import Navbar from "./Navbar";
+"use client";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
+
 import Button from "./UI/Button";
 import WinBadge from "./UI/WinBadge";
 
 export default function FirstSection() {
+	const { ref, inView } = useInView({
+		triggerOnce: true, // This will trigger the animation only once
+		threshold: 0.2, // Adjust this value as needed
+	});
+
 	return (
-		<div className="h-screen bg-gradient-to-r via-violet-100 to-sky-200 from-pink-200">
-			<div className="pt-56 md:pt-32 md:grid grid-cols-2 items-center px-5 md:px-20">
+		<motion.div
+			initial={{ opacity: 0, zIndex: -1 }}
+			animate={inView ? { opacity: 1, zIndex: 1 } : {}}
+			exit={{ opacity: 0 }}
+			transition={{ duration: 1, delay: 0.3 }}
+			className="h-screen bg-gradient-to-r via-violet-100 to-sky-200 from-pink-200"
+			ref={ref}
+		>
+			<div className="pt-40 md:pt-32 md:grid grid-cols-2 items-center px-5 md:px-20">
 				<div>
 					<div className="flex gap-3 my-5">
 						<WinBadge
@@ -33,6 +48,6 @@ export default function FirstSection() {
 					<img src="/CHAT.png" alt="chat-img" />
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 }
